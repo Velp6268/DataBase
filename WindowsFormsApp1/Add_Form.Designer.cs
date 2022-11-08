@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textBox_number2 = new System.Windows.Forms.TextBox();
+            this.textBox_FIO2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_save = new System.Windows.Forms.Button();
-            this.textBox_FIO2 = new System.Windows.Forms.TextBox();
-            this.textBox_number2 = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -50,6 +50,21 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(571, 166);
             this.panel2.TabIndex = 3;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // textBox_number2
+            // 
+            this.textBox_number2.Location = new System.Drawing.Point(148, 98);
+            this.textBox_number2.Name = "textBox_number2";
+            this.textBox_number2.Size = new System.Drawing.Size(138, 20);
+            this.textBox_number2.TabIndex = 7;
+            // 
+            // textBox_FIO2
+            // 
+            this.textBox_FIO2.Location = new System.Drawing.Point(148, 64);
+            this.textBox_FIO2.Name = "textBox_FIO2";
+            this.textBox_FIO2.Size = new System.Drawing.Size(138, 20);
+            this.textBox_FIO2.TabIndex = 6;
             // 
             // label5
             // 
@@ -99,20 +114,6 @@
             this.btn_save.Text = "Сохранить";
             this.btn_save.UseVisualStyleBackColor = true;
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
-            // 
-            // textBox_FIO2
-            // 
-            this.textBox_FIO2.Location = new System.Drawing.Point(148, 64);
-            this.textBox_FIO2.Name = "textBox_FIO2";
-            this.textBox_FIO2.Size = new System.Drawing.Size(138, 20);
-            this.textBox_FIO2.TabIndex = 6;
-            // 
-            // textBox_number2
-            // 
-            this.textBox_number2.Location = new System.Drawing.Point(148, 98);
-            this.textBox_number2.Name = "textBox_number2";
-            this.textBox_number2.Size = new System.Drawing.Size(138, 20);
-            this.textBox_number2.TabIndex = 7;
             // 
             // Add_Form
             // 

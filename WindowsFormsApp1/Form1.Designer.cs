@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_refresh = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -38,12 +39,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_save1 = new System.Windows.Forms.Button();
+            this.btn_Change = new System.Windows.Forms.Button();
+            this.btn_delete = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.btn_refresh = new System.Windows.Forms.Button();
+            this.txtBox_Search = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtBox_id1 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btn_Clear = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -52,12 +57,26 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.btn_Clear);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.txtBox_Search);
             this.panel1.Controls.Add(this.btn_refresh);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-1, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(907, 121);
             this.panel1.TabIndex = 0;
+            // 
+            // btn_refresh
+            // 
+            this.btn_refresh.Location = new System.Drawing.Point(603, 47);
+            this.btn_refresh.Name = "btn_refresh";
+            this.btn_refresh.Size = new System.Drawing.Size(53, 39);
+            this.btn_refresh.TabIndex = 1;
+            this.btn_refresh.Text = "Refresh";
+            this.btn_refresh.UseVisualStyleBackColor = true;
+            this.btn_refresh.Click += new System.EventHandler(this.btn_refresh_Click);
             // 
             // label1
             // 
@@ -84,6 +103,9 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.txtBox_id1);
             this.panel2.Controls.Add(this.textBox_Number);
             this.panel2.Controls.Add(this.textBox_FIO);
             this.panel2.Controls.Add(this.label5);
@@ -96,14 +118,14 @@
             // 
             // textBox_Number
             // 
-            this.textBox_Number.Location = new System.Drawing.Point(148, 102);
+            this.textBox_Number.Location = new System.Drawing.Point(148, 122);
             this.textBox_Number.Name = "textBox_Number";
             this.textBox_Number.Size = new System.Drawing.Size(138, 20);
             this.textBox_Number.TabIndex = 5;
             // 
             // textBox_FIO
             // 
-            this.textBox_FIO.Location = new System.Drawing.Point(148, 64);
+            this.textBox_FIO.Location = new System.Drawing.Point(148, 89);
             this.textBox_FIO.Name = "textBox_FIO";
             this.textBox_FIO.Size = new System.Drawing.Size(138, 20);
             this.textBox_FIO.TabIndex = 4;
@@ -112,7 +134,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(27, 105);
+            this.label5.Location = new System.Drawing.Point(27, 125);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(98, 13);
             this.label5.TabIndex = 3;
@@ -122,7 +144,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(27, 67);
+            this.label4.Location = new System.Drawing.Point(27, 92);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 2;
@@ -140,41 +162,45 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button2);
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.panel3.Controls.Add(this.btn_save1);
+            this.panel3.Controls.Add(this.btn_Change);
+            this.panel3.Controls.Add(this.btn_delete);
             this.panel3.Controls.Add(this.btnNew);
             this.panel3.Location = new System.Drawing.Point(602, 457);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(204, 232);
             this.panel3.TabIndex = 3;
             // 
-            // button4
+            // btn_save1
             // 
-            this.button4.Location = new System.Drawing.Point(41, 158);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(116, 41);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Сохранить";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_save1.Location = new System.Drawing.Point(41, 158);
+            this.btn_save1.Name = "btn_save1";
+            this.btn_save1.Size = new System.Drawing.Size(116, 41);
+            this.btn_save1.TabIndex = 3;
+            this.btn_save1.Text = "Сохранить";
+            this.btn_save1.UseVisualStyleBackColor = true;
+            this.btn_save1.Click += new System.EventHandler(this.btn_save1_Click);
             // 
-            // button3
+            // btn_Change
             // 
-            this.button3.Location = new System.Drawing.Point(41, 111);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(116, 41);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Изменить";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_Change.Location = new System.Drawing.Point(41, 111);
+            this.btn_Change.Name = "btn_Change";
+            this.btn_Change.Size = new System.Drawing.Size(116, 41);
+            this.btn_Change.TabIndex = 2;
+            this.btn_Change.Text = "Изменить";
+            this.btn_Change.UseVisualStyleBackColor = true;
+            this.btn_Change.Click += new System.EventHandler(this.btn_Change_Click);
             // 
-            // button2
+            // btn_delete
             // 
-            this.button2.Location = new System.Drawing.Point(41, 64);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 41);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Удалить";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_delete.Location = new System.Drawing.Point(41, 64);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(116, 41);
+            this.btn_delete.TabIndex = 1;
+            this.btn_delete.Text = "Удалить";
+            this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // btnNew
             // 
@@ -196,15 +222,50 @@
             this.label3.Text = "Управление записими";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // btn_refresh
+            // txtBox_Search
             // 
-            this.btn_refresh.Location = new System.Drawing.Point(716, 42);
-            this.btn_refresh.Name = "btn_refresh";
-            this.btn_refresh.Size = new System.Drawing.Size(53, 39);
-            this.btn_refresh.TabIndex = 1;
-            this.btn_refresh.Text = "Refresh";
-            this.btn_refresh.UseVisualStyleBackColor = true;
-            this.btn_refresh.Click += new System.EventHandler(this.btn_refresh_Click);
+            this.txtBox_Search.Location = new System.Drawing.Point(736, 57);
+            this.txtBox_Search.Name = "txtBox_Search";
+            this.txtBox_Search.Size = new System.Drawing.Size(136, 20);
+            this.txtBox_Search.TabIndex = 2;
+            this.txtBox_Search.TextChanged += new System.EventHandler(this.txtBox_Search_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(671, 57);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(59, 20);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Поиск:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // txtBox_id1
+            // 
+            this.txtBox_id1.Location = new System.Drawing.Point(148, 57);
+            this.txtBox_id1.Name = "txtBox_id1";
+            this.txtBox_id1.Size = new System.Drawing.Size(138, 20);
+            this.txtBox_id1.TabIndex = 6;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(27, 64);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(15, 13);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "id";
+            // 
+            // btn_Clear
+            // 
+            this.btn_Clear.Location = new System.Drawing.Point(507, 47);
+            this.btn_Clear.Name = "btn_Clear";
+            this.btn_Clear.Size = new System.Drawing.Size(53, 39);
+            this.btn_Clear.TabIndex = 4;
+            this.btn_Clear.Text = "Clear";
+            this.btn_Clear.UseVisualStyleBackColor = true;
+            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
             // 
             // Form1
             // 
@@ -243,11 +304,16 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox_Number;
         private System.Windows.Forms.TextBox textBox_FIO;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_save1;
+        private System.Windows.Forms.Button btn_Change;
+        private System.Windows.Forms.Button btn_delete;
         private System.Windows.Forms.Button btnNew;
         private System.Windows.Forms.Button btn_refresh;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtBox_Search;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtBox_id1;
+        private System.Windows.Forms.Button btn_Clear;
     }
 }
 

@@ -31,15 +31,20 @@ namespace WindowsFormsApp1
 
             database.openConnection();
 
-            var fio = textBox_FIO2.Text;
+            var fam = textBox_Fam1.Text;
+            var name = textBox_Name1.Text;
+            var otchestvo = textBox_Otchestvo1.Text;
+            var pol = textBox_Pol1.Text;
+            var country = textBox_Country1.Text;
+            var city = textBox_City1.Text;
             decimal number;
 
 
-            if(decimal.TryParse(textBox_number2.Text, out number))
+            if(decimal.TryParse(textBox_Number1.Text, out number))
             {
 
             
-                var addQuery = $"insert into Client (fio, number) values ('{fio}', '{number}' )";
+                var addQuery = $"insert into Clients (Фамилия, Имя, Отчество, Пол, Страна, Город, Номер_Телефона) values ('{fam}', '{name}', '{otchestvo}', '{pol}', '{country}', '{city}', '{number}')";
 
                 var command = new SqlCommand(addQuery, database.getConnection());
                 command.ExecuteNonQuery();
@@ -64,6 +69,16 @@ namespace WindowsFormsApp1
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox_number2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_FIO2_TextChanged(object sender, EventArgs e)
         {
 
         }

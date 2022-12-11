@@ -33,24 +33,39 @@ namespace WindowsFormsApp1
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable table = new DataTable();
 
-            string queryString = $"select  login, password from register where login = '{login}' and password = '{password}'"; //переменная для выбора данных
+            string queryString = $"select login, password from register where login = '{login}' and password = '{password}'"; //переменная для выбора данных
 
             SqlCommand sqlCommand = new SqlCommand(queryString, dataBase.getConnection()); // Берет по строчке и подключает..
             adapter.SelectCommand = sqlCommand; // подключает
             adapter.Fill(table); //заполняет таблицу
 
+            //if (table.Rows.Count == 1) //Открытие формы, и проверка данных
+            //{
+            //    MessageBox.Show("Вы вошли успешно");
+            //    Form1 form1 = new Form1();
+            //    this.Hide();
+            //    form1.ShowDialog();
+            //    this.Show();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Ошибка");
+            //}
+
             if (table.Rows.Count == 1) //Открытие формы, и проверка данных
             {
                 MessageBox.Show("Вы вошли успешно");
-                Form1 form1 = new Form1();
+                DataBaseCar form2 = new DataBaseCar();
                 this.Hide();
-                form1.ShowDialog();
+                form2.ShowDialog();
                 this.Show();
             }
             else
             {
                 MessageBox.Show("Ошибка");
             }
+
+
 
         }
 
@@ -71,6 +86,11 @@ namespace WindowsFormsApp1
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

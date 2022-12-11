@@ -37,14 +37,14 @@ namespace WindowsFormsApp1
 
         private void CreateColumns()
         {
-            dataGridView1.Columns.Add("КодКлиента", "КодКоиента");
+            dataGridView1.Columns.Add("КодКлиента", "КодКлиента");
             dataGridView1.Columns.Add("Фамилия", "Фамилия");
             dataGridView1.Columns.Add("Имя", "Имя");
             dataGridView1.Columns.Add("Отчество", "Отчество");
             dataGridView1.Columns.Add("Пол", "Пол");
             dataGridView1.Columns.Add("Страна", "Страна");
             dataGridView1.Columns.Add("Город", "Город");
-            dataGridView1.Columns.Add("Номер_Телефона", "Номер Телефона");
+            dataGridView1.Columns.Add("Номер_Телефона", "Номер_Телефона");
             dataGridView1.Columns.Add("IsNew", String.Empty);
            
         }
@@ -307,6 +307,11 @@ namespace WindowsFormsApp1
         }
 
         private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }

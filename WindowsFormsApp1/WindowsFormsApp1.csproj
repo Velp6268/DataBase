@@ -59,6 +59,12 @@
       <DependentUpon>Authorization.cs</DependentUpon>
     </Compile>
     <Compile Include="DataBase.cs" />
+    <Compile Include="DataBaseCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBaseCar.Designer.cs">
+      <DependentUpon>DataBaseCar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Authorization.resx">
       <DependentUpon>Authorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBaseCar.resx">
+      <DependentUpon>DataBaseCar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

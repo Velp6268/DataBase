@@ -241,8 +241,8 @@ namespace WindowsFormsApp1
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-            Add_Form addfrm = new Add_Form();
-            addfrm.Show();
+            Add_Car addcarform = new Add_Car();
+            addcarform.Show();
         }
 
         private void label6_Click(object sender, EventArgs e)

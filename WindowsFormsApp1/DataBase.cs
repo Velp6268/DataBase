@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
 
 
 
-        SqlConnection connect = new SqlConnection("Data Source = VELP; Initial Catalog = SaleCar; Integrated Security = true"); // Для конекта 
+        SqlConnection connect = new SqlConnection("Data Source = VELP; Initial Catalog = SaleCars; Integrated Security = true"); // Для конекта 
 
         public void openConnection() // Открывает бд
         {

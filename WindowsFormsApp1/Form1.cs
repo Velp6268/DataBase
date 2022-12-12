@@ -315,5 +315,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void txtBox_id1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

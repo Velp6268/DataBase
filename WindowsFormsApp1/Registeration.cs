@@ -35,6 +35,7 @@ namespace WindowsFormsApp1
             var login = textBox1.Text;
             var password = textBox2.Text;
             string quer = $"insert into register(login, password) values('{login}', '{password}')";
+
             SqlCommand command = new SqlCommand(quer, dataBase.getConnection());
 
             dataBase.openConnection();

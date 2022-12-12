@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btn_save = new System.Windows.Forms.Button();
             this.textBox_City1 = new System.Windows.Forms.TextBox();
             this.textBox_Country1 = new System.Windows.Forms.TextBox();
             this.textBox_Pol1 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.textBox_Otchestvo1 = new System.Windows.Forms.TextBox();
             this.textBox_Name1 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtBox_id1 = new System.Windows.Forms.TextBox();
@@ -45,10 +46,9 @@
             this.textBox_Fam1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -78,34 +78,6 @@
             this.panel2.Size = new System.Drawing.Size(571, 431);
             this.panel2.TabIndex = 3;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(27, 67);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(25, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(201, 25);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Создание записи";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(96, 26);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(571, 77);
-            this.panel1.TabIndex = 5;
             // 
             // btn_save
             // 
@@ -139,6 +111,33 @@
             this.textBox_Pol1.Size = new System.Drawing.Size(138, 20);
             this.textBox_Pol1.TabIndex = 31;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(84, 262);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(40, 13);
+            this.label12.TabIndex = 30;
+            this.label12.Text = "Город:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(82, 229);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(46, 13);
+            this.label11.TabIndex = 29;
+            this.label11.Text = "Страна:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(82, 194);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(30, 13);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "Пол:";
+            // 
             // textBox_Otchestvo1
             // 
             this.textBox_Otchestvo1.Location = new System.Drawing.Point(203, 156);
@@ -152,6 +151,15 @@
             this.textBox_Name1.Name = "textBox_Name1";
             this.textBox_Name1.Size = new System.Drawing.Size(138, 20);
             this.textBox_Name1.TabIndex = 26;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(82, 159);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(57, 13);
+            this.label9.TabIndex = 25;
+            this.label9.Text = "Отчество:";
             // 
             // label8
             // 
@@ -182,6 +190,7 @@
             // 
             this.textBox_Number1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox_Number1.Location = new System.Drawing.Point(203, 291);
+            this.textBox_Number1.MaxLength = 11;
             this.textBox_Number1.Name = "textBox_Number1";
             this.textBox_Number1.Size = new System.Drawing.Size(138, 20);
             this.textBox_Number1.TabIndex = 21;
@@ -211,41 +220,33 @@
             this.label5.TabIndex = 3;
             this.label5.Text = "Номер Телефона:";
             // 
-            // label9
+            // label4
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(82, 159);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(57, 13);
-            this.label9.TabIndex = 25;
-            this.label9.Text = "Отчество:";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(27, 67);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 13);
+            this.label4.TabIndex = 2;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label10
+            // label1
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(82, 194);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(30, 13);
-            this.label10.TabIndex = 28;
-            this.label10.Text = "Пол:";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(25, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(201, 25);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Создание записи";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label11
+            // panel1
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(82, 229);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(46, 13);
-            this.label11.TabIndex = 29;
-            this.label11.Text = "Страна:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(84, 262);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(40, 13);
-            this.label12.TabIndex = 30;
-            this.label12.Text = "Город:";
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(96, 26);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(571, 77);
+            this.panel1.TabIndex = 5;
             // 
             // Add_Form
             // 

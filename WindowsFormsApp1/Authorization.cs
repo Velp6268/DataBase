@@ -93,18 +93,32 @@ namespace WindowsFormsApp1
 
 
 
+            //if (table.Rows.Count == 1) //Открытие формы, и проверка данных
+            //{
+            //    MessageBox.Show("Вы вошли успешно");
+            //    RequestCarSupplier form4 = new RequestCarSupplier();
+            //    this.Hide();
+            //    form4.ShowDialog();
+            //    this.Show();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Ошибка");
+            //}
+
             if (table.Rows.Count == 1) //Открытие формы, и проверка данных
             {
                 MessageBox.Show("Вы вошли успешно");
-                RequestCarSupplier form4 = new RequestCarSupplier();
+                Form2 form5 = new Form2();
                 this.Hide();
-                form4.ShowDialog();
-                this.Show();
+                form5.ShowDialog();
+                
             }
             else
             {
                 MessageBox.Show("Ошибка");
             }
+
 
 
         }

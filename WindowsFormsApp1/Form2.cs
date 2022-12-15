@@ -33,7 +33,7 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-                Form1 form2 = new Form1();
+                DataBaseCar form2 = new DataBaseCar();
                 form2.ShowDialog();
                 this.Hide();
                 this.Show();
@@ -41,7 +41,7 @@ namespace WindowsFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form1 form3 = new Form1();
+            ApplicationSupplier form3 = new ApplicationSupplier();
             form3.ShowDialog();
             this.Hide();
             this.Show();
@@ -56,3 +56,5 @@ namespace WindowsFormsApp1
         }
     }
 }
+
+

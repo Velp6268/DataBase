@@ -94,7 +94,7 @@
             // 
             // textBox_idMenager
             // 
-            this.textBox_idMenager.Location = new System.Drawing.Point(305, 106);
+            this.textBox_idMenager.Location = new System.Drawing.Point(305, 71);
             this.textBox_idMenager.Name = "textBox_idMenager";
             this.textBox_idMenager.Size = new System.Drawing.Size(138, 20);
             this.textBox_idMenager.TabIndex = 37;
@@ -102,7 +102,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(87, 109);
+            this.label2.Location = new System.Drawing.Point(87, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 13);
             this.label2.TabIndex = 36;
@@ -176,7 +176,7 @@
             // 
             // textBox_MarkaAuto
             // 
-            this.textBox_MarkaAuto.Location = new System.Drawing.Point(305, 67);
+            this.textBox_MarkaAuto.Location = new System.Drawing.Point(305, 102);
             this.textBox_MarkaAuto.Name = "textBox_MarkaAuto";
             this.textBox_MarkaAuto.Size = new System.Drawing.Size(138, 20);
             this.textBox_MarkaAuto.TabIndex = 25;
@@ -184,7 +184,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(87, 74);
+            this.label3.Location = new System.Drawing.Point(87, 109);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 13);
             this.label3.TabIndex = 24;

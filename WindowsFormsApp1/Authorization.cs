@@ -36,6 +36,7 @@ namespace WindowsFormsApp1
             string queryString = $"select login, password from register where login = '{login}' and password = '{password}'"; //переменная для выбора данных
 
             SqlCommand sqlCommand = new SqlCommand(queryString, dataBase.getConnection()); // Берет по строчке и подключает..
+
             adapter.SelectCommand = sqlCommand; // подключает
             adapter.Fill(table); //заполняет таблицу
 
@@ -43,18 +44,18 @@ namespace WindowsFormsApp1
 
             //111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
 
-            if (table.Rows.Count == 1) //Открытие формы, и проверка данных
-            {
-                MessageBox.Show("Вы вошли успешно");
-                Form1 form1 = new Form1();
-                this.Hide();
-                form1.ShowDialog();
-                this.Show();
-            }
-            else
-            {
-                MessageBox.Show("Ошибка");
-            }
+            //if (table.Rows.Count == 1) //Открытие формы, и пров1ерка данных
+            //{
+            //    MessageBox.Show("Вы вошли успешно");
+            //    Form1 form1 = new Form1();
+            //    this.Hide();
+            //    form1.ShowDialog();
+            //    this.Show();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Ошибка");
+            //}
 
 
             //2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
@@ -90,6 +91,20 @@ namespace WindowsFormsApp1
             //    MessageBox.Show("Ошибка");
             //}
 
+
+
+            if (table.Rows.Count == 1) //Открытие формы, и проверка данных
+            {
+                MessageBox.Show("Вы вошли успешно");
+                RequestCarSupplier form4 = new RequestCarSupplier();
+                this.Hide();
+                form4.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Ошибка");
+            }
 
 
         }

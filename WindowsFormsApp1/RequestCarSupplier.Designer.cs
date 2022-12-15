@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class ApplicationSupplier
+    partial class RequestCarSupplier
     {
         /// <summary>
         /// Required designer variable.
@@ -35,20 +35,16 @@
             this.btn_delete = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox_Condition2 = new System.Windows.Forms.TextBox();
             this.textBox_ReleaseDate2 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox_MadeCountry = new System.Windows.Forms.TextBox();
             this.textBox_ModelAuto = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtBox_id3 = new System.Windows.Forms.TextBox();
+            this.txtBox_idManager = new System.Windows.Forms.TextBox();
             this.textBox_MarkaAuto = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Clear = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -57,7 +53,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +68,7 @@
             this.panel3.Location = new System.Drawing.Point(615, 481);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(204, 276);
-            this.panel3.TabIndex = 7;
+            this.panel3.TabIndex = 11;
             // 
             // label3
             // 
@@ -126,67 +122,36 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.panel2.Controls.Add(this.textBox_Condition2);
             this.panel2.Controls.Add(this.textBox_ReleaseDate2);
-            this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.textBox_MadeCountry);
             this.panel2.Controls.Add(this.textBox_ModelAuto);
-            this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.txtBox_id3);
+            this.panel2.Controls.Add(this.txtBox_idManager);
             this.panel2.Controls.Add(this.textBox_MarkaAuto);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(49, 468);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(437, 301);
-            this.panel2.TabIndex = 6;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // textBox_Condition2
-            // 
-            this.textBox_Condition2.Location = new System.Drawing.Point(245, 220);
-            this.textBox_Condition2.Name = "textBox_Condition2";
-            this.textBox_Condition2.Size = new System.Drawing.Size(138, 20);
-            this.textBox_Condition2.TabIndex = 16;
-            this.textBox_Condition2.TextChanged += new System.EventHandler(this.textBox_Country_TextChanged);
+            this.panel2.TabIndex = 10;
             // 
             // textBox_ReleaseDate2
             // 
-            this.textBox_ReleaseDate2.Location = new System.Drawing.Point(245, 185);
+            this.textBox_ReleaseDate2.Location = new System.Drawing.Point(245, 150);
             this.textBox_ReleaseDate2.MaxLength = 4;
             this.textBox_ReleaseDate2.Name = "textBox_ReleaseDate2";
             this.textBox_ReleaseDate2.Size = new System.Drawing.Size(138, 20);
             this.textBox_ReleaseDate2.TabIndex = 15;
-            this.textBox_ReleaseDate2.TextChanged += new System.EventHandler(this.textBox_Pol_TextChanged);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(27, 223);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(64, 13);
-            this.label11.TabIndex = 13;
-            this.label11.Text = "Состояние:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(27, 188);
+            this.label10.Location = new System.Drawing.Point(27, 153);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(74, 13);
             this.label10.TabIndex = 12;
             this.label10.Text = "Год выпуска:";
-            // 
-            // textBox_MadeCountry
-            // 
-            this.textBox_MadeCountry.Location = new System.Drawing.Point(245, 150);
-            this.textBox_MadeCountry.Name = "textBox_MadeCountry";
-            this.textBox_MadeCountry.Size = new System.Drawing.Size(138, 20);
-            this.textBox_MadeCountry.TabIndex = 11;
-            this.textBox_MadeCountry.TextChanged += new System.EventHandler(this.textBox_Otchestvo_TextChanged);
             // 
             // textBox_ModelAuto
             // 
@@ -194,16 +159,6 @@
             this.textBox_ModelAuto.Name = "textBox_ModelAuto";
             this.textBox_ModelAuto.Size = new System.Drawing.Size(138, 20);
             this.textBox_ModelAuto.TabIndex = 10;
-            this.textBox_ModelAuto.TextChanged += new System.EventHandler(this.textBox_Name_TextChanged);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(27, 153);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(114, 13);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "Страна Изгтовитель:";
             // 
             // label8
             // 
@@ -219,18 +174,16 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(27, 55);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(133, 13);
+            this.label7.Size = new System.Drawing.Size(88, 13);
             this.label7.TabIndex = 7;
-            this.label7.Text = "Код Заявки Поставщика";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.label7.Text = "Код Менеджера";
             // 
-            // txtBox_id3
+            // txtBox_idManager
             // 
-            this.txtBox_id3.Location = new System.Drawing.Point(245, 48);
-            this.txtBox_id3.Name = "txtBox_id3";
-            this.txtBox_id3.Size = new System.Drawing.Size(138, 20);
-            this.txtBox_id3.TabIndex = 6;
-            this.txtBox_id3.TextChanged += new System.EventHandler(this.txtBox_id1_TextChanged);
+            this.txtBox_idManager.Location = new System.Drawing.Point(245, 48);
+            this.txtBox_idManager.Name = "txtBox_idManager";
+            this.txtBox_idManager.Size = new System.Drawing.Size(138, 20);
+            this.txtBox_idManager.TabIndex = 6;
             // 
             // textBox_MarkaAuto
             // 
@@ -238,7 +191,6 @@
             this.textBox_MarkaAuto.Name = "textBox_MarkaAuto";
             this.textBox_MarkaAuto.Size = new System.Drawing.Size(138, 20);
             this.textBox_MarkaAuto.TabIndex = 4;
-            this.textBox_MarkaAuto.TextChanged += new System.EventHandler(this.textBox_Fam_TextChanged);
             // 
             // label4
             // 
@@ -248,7 +200,6 @@
             this.label4.Size = new System.Drawing.Size(70, 13);
             this.label4.TabIndex = 2;
             this.label4.Text = "Марка Авто:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label2
             // 
@@ -259,18 +210,18 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Запись";
             // 
-            // dataGridView3
+            // dataGridView4
             // 
-            this.dataGridView3.AllowUserToAddRows = false;
-            this.dataGridView3.AllowUserToDeleteRows = false;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(12, 142);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.Size = new System.Drawing.Size(907, 293);
-            this.dataGridView3.TabIndex = 5;
-            this.dataGridView3.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView4.AllowUserToAddRows = false;
+            this.dataGridView4.AllowUserToDeleteRows = false;
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(12, 142);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.ReadOnly = true;
+            this.dataGridView4.Size = new System.Drawing.Size(907, 293);
+            this.dataGridView4.TabIndex = 9;
+            this.dataGridView4.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView4.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellContentClick);
             // 
             // panel1
             // 
@@ -283,7 +234,7 @@
             this.panel1.Location = new System.Drawing.Point(12, 15);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(907, 121);
-            this.panel1.TabIndex = 4;
+            this.panel1.TabIndex = 8;
             // 
             // btn_Clear
             // 
@@ -330,26 +281,26 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Заявка поставщику";
+            this.label1.Text = "Заявка перегонщку";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // ApplicationSupplier
+            // RequestCarSupplier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1087, 808);
+            this.ClientSize = new System.Drawing.Size(977, 765);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.dataGridView3);
+            this.Controls.Add(this.dataGridView4);
             this.Controls.Add(this.panel1);
-            this.Name = "ApplicationSupplier";
-            this.Text = "ApplicationSupplier";
-            this.Load += new System.EventHandler(this.ApplicationSupplier_Load);
+            this.Name = "RequestCarSupplier";
+            this.Text = "RequestCarSupplier";
+            this.Load += new System.EventHandler(this.RequestCarSupplier_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -365,20 +316,16 @@
         private System.Windows.Forms.Button btn_delete;
         private System.Windows.Forms.Button btnNew;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox_Condition2;
         private System.Windows.Forms.TextBox textBox_ReleaseDate2;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox_MadeCountry;
         private System.Windows.Forms.TextBox textBox_ModelAuto;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtBox_id3;
+        private System.Windows.Forms.TextBox txtBox_idManager;
         private System.Windows.Forms.TextBox textBox_MarkaAuto;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dataGridView4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_Clear;
         private System.Windows.Forms.Label label6;

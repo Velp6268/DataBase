@@ -64,6 +64,12 @@
     <Compile Include="Add_Form.Designer.cs">
       <DependentUpon>Add_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add_RequestCarSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_RequestCarSupplier.Designer.cs">
+      <DependentUpon>Add_RequestCarSupplier.cs</DependentUpon>
+    </Compile>
     <Compile Include="ApplicationSupplier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,12 @@
     <Compile Include="Registeration.Designer.cs">
       <DependentUpon>Registeration.cs</DependentUpon>
     </Compile>
+    <Compile Include="RequestCarSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestCarSupplier.Designer.cs">
+      <DependentUpon>RequestCarSupplier.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Add_ApplicationSupplier.resx">
       <DependentUpon>Add_ApplicationSupplier.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Add_Form.resx">
       <DependentUpon>Add_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_RequestCarSupplier.resx">
+      <DependentUpon>Add_RequestCarSupplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ApplicationSupplier.resx">
       <DependentUpon>ApplicationSupplier.cs</DependentUpon>
@@ -129,6 +144,9 @@
     </Compile>
     <EmbeddedResource Include="Registeration.resx">
       <DependentUpon>Registeration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestCarSupplier.resx">
+      <DependentUpon>RequestCarSupplier.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

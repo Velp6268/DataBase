@@ -136,6 +136,8 @@ namespace WindowsFormsApp1
 
         private void Authorization_Load(object sender, EventArgs e)
         {
+            pictureBox2.Visible= true;
+            textBox2.UseSystemPasswordChar = true;
 
         }
 
@@ -148,6 +150,28 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            textBox2.UseSystemPasswordChar = false;
+            pictureBox2.Visible = false;
+            pictureBox1.Visible = true;
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            textBox2.UseSystemPasswordChar = true;
+            pictureBox2.Visible = true;
+            pictureBox1.Visible = false;
+        }
+
+
     }
 
 }

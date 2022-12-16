@@ -150,6 +150,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Registeration.resx">
       <DependentUpon>Registeration.cs</DependentUpon>
@@ -169,6 +170,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jMyHukA6I40.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jMyHukA6I401.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ko11vhuI1Ao.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

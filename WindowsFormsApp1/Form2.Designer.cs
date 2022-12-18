@@ -39,16 +39,16 @@
             // 
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(187, 31);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(253, 99);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(348, 37);
+            this.label1.Size = new System.Drawing.Size(251, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "Выберите Базу Данных";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(218, 163);
+            this.button1.Location = new System.Drawing.Point(175, 173);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(95, 37);
             this.button1.TabIndex = 1;
@@ -58,7 +58,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(409, 163);
+            this.button2.Location = new System.Drawing.Point(276, 173);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(95, 37);
             this.button2.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(218, 263);
+            this.button3.Location = new System.Drawing.Point(377, 173);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(95, 37);
             this.button3.TabIndex = 3;
@@ -78,7 +78,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(409, 263);
+            this.button4.Location = new System.Drawing.Point(478, 173);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(95, 37);
             this.button4.TabIndex = 4;
@@ -90,7 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(818, 369);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
